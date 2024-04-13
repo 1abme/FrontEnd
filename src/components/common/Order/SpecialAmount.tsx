@@ -55,7 +55,6 @@ const SpecialAmount = ({
 
   const handleAmountType = (id: string, value: string) => {
     if (id) {
-      setAmountType(value);
       if (amountType !== value) {
         if (value === "할인금") {
           if (+amount.additionalPrice <= totalPrice) {
@@ -63,6 +62,7 @@ const SpecialAmount = ({
               ...prev,
               additionalPrice: amount.additionalPrice * -1,
             }));
+            setAmountType(value);
           } else alert("할인금은 총 금액을 초과할 수 없습니다.");
           return;
         }
@@ -71,6 +71,7 @@ const SpecialAmount = ({
             ...prev,
             additionalPrice: Math.abs(amount.additionalPrice),
           }));
+          setAmountType(value);
         }
       } else {
         return;
