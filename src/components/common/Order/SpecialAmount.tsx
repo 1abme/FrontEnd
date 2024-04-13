@@ -36,7 +36,9 @@ const SpecialAmount = ({
 
   const handleAmount = (role?: string) => {
     if (role) {
-      role === "submit" && mutate();
+      if (role === "submit") mutate();
+      if (role === "cancel")
+        setAmount({ imomOrderId: "", additionalPrice: 0, memo: "" });
     }
     setEditAmount(!editAmount);
   };
@@ -53,6 +55,7 @@ const SpecialAmount = ({
 
   const handleAmountType = (id: string, value: string) => {
     if (id) {
+      setAmountType(value);
       if (amountType !== value) {
         if (value === "할인금") {
           if (+amount.additionalPrice <= totalPrice) {
@@ -69,7 +72,6 @@ const SpecialAmount = ({
             additionalPrice: Math.abs(amount.additionalPrice),
           }));
         }
-        setAmountType(value);
       } else {
         return;
       }
