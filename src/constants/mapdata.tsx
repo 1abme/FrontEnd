@@ -14,10 +14,10 @@ import ItalyInfo from "/public/italy_info.svg";
 import ItalyMbInfo from "/public/italy_mb_info.svg";
 import ItalyLabel from "/public/italy_label.svg";
 import ItalySignature from "/public/italy.svg";
-import JapanInfo from "/public/japan_info.svg";
-import JapanMbInfo from "/public/japan_mb_info.svg";
-import JapanLabel from "/public/japan_label.svg";
-import JapanSignature from "/public/japan.svg";
+import CanadaInfo from "/public/canada_info.svg";
+import CanadaMbInfo from "/public/canada_mb_info.svg";
+import CanadaLabel from "/public/canada_label.svg";
+import CanadaSignature from "/public/canada.svg";
 import NewzealandInfo from "/public/newzealand_info.svg";
 import NewzealandMbInfo from "/public/newzealand_mb_info.svg";
 import NewzealandLabel from "/public/newzealand_label.svg";
@@ -34,6 +34,10 @@ import TaiwanInfo from "/public/taiwan_info.svg";
 import TaiwanMbInfo from "/public/taiwan_mb_info.svg";
 import TaiwanLabel from "/public/taiwan_label.svg";
 import TaiwanSignature from "/public/taiwan.svg";
+import KidzaniaInfo from "/public/kidzania_info.svg";
+import KidzaniaMbInfo from "/public/kidzania_mb_info.svg";
+import KidzaniaLabel from "/public/kidzania_label.svg";
+import KidzaniaSignature from "/public/kidzania.svg";
 
 export const COUNTRY_IMG_DATA = {
   australia: {
@@ -52,9 +56,9 @@ export const COUNTRY_IMG_DATA = {
     signature: ItalySignature,
     label: ItalyLabel,
   },
-  japan: {
-    signature: JapanSignature,
-    label: JapanLabel,
+  canada: {
+    signature: CanadaSignature,
+    label: CanadaLabel,
   },
   newzealand: {
     signature: NewzealandSignature,
@@ -71,6 +75,10 @@ export const COUNTRY_IMG_DATA = {
   taiwan: {
     signature: TaiwanSignature,
     label: TaiwanLabel,
+  },
+  kidzania: {
+    signature: KidzaniaSignature,
+    label: KidzaniaLabel,
   },
 };
 
@@ -91,9 +99,9 @@ export const COUNTRY_INFO_IMG_DATA = {
     web: ItalyInfo,
     mobile: ItalyMbInfo,
   },
-  japan: {
-    web: JapanInfo,
-    mobile: JapanMbInfo,
+  canada: {
+    web: CanadaInfo,
+    mobile: CanadaMbInfo,
   },
   newzealand: {
     web: NewzealandInfo,
@@ -111,6 +119,10 @@ export const COUNTRY_INFO_IMG_DATA = {
     web: TaiwanInfo,
     mobile: TaiwanMbInfo,
   },
+  kidzania: {
+    web: KidzaniaInfo,
+    mobile: KidzaniaMbInfo,
+  },
 };
 
 export const COUNTRY_NAME = {
@@ -118,9 +130,10 @@ export const COUNTRY_NAME = {
   easternEurope: "동유럽",
   franswiss: "프랑스위스",
   italy: "이탈리아",
-  japan: "일본",
+  canada: "캐나다",
   newzealand: "뉴질랜드",
   southeastAsia: "동남아",
   spain: "스페인",
   taiwan: "대만",
+  kidzania: "키자니아",
 };
